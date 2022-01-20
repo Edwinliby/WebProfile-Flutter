@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'profile.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -11,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Flutter Web-Profile',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(    
-        primarySwatch: Colors.blue,
+        
       ),
-    
+      home: Profile(),
     );
   }
 }
